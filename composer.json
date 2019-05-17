@@ -1,0 +1,36 @@
+{
+  "name": "LiFeAiR/PubSub",
+  "type": "application",
+  "description": "A AMQP adapter for the php-pubsub package",
+  "keywords": [
+    "framework"
+  ],
+  "config": {
+    "secure-http": false,
+    "disable-tls": true
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Pavel Mozhchil",
+      "email": "lifeair@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LiFeAiR\\PubSub\\AMQP\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "superbalist/php-pubsub": "^1.0@dev",
+    "php-amqplib/php-amqplib": "^2.9"
+  }
+}
