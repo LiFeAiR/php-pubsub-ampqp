@@ -43,7 +43,7 @@ class AMQPPubSubAdapter implements PubSubAdapterInterface
     {
         $channelObject = $this->client->channel();
 
-        list($queue_name, ,) = $channelObject->queue_declare('', false, false, true, false);
+        list($queue_name, ,) = $channelObject->queue_declare($channel, false, true, false, false);
         $channelObject->queue_bind($queue_name, $channel);
         $channelObject->basic_consume($queue_name, '', false, true, false, false, $handler);
 
@@ -65,7 +65,7 @@ class AMQPPubSubAdapter implements PubSubAdapterInterface
         $channelObject = $this->client->channel();
 
         $msg = new AMQPMessage(Utils::serializeMessage($message));
-        $channelObject->basic_publish($msg, $channel);
+        $channelObject->basic_publish($msg, '', $channel);
 
         $channelObject->close();
     }
