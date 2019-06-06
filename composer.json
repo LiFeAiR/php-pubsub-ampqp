@@ -10,7 +10,6 @@
     "disable-tls": true
   },
   "license": "MIT",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Pavel Mozhchil",
