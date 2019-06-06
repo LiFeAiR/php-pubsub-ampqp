@@ -1,5 +1,5 @@
 {
-  "name": "LiFeAiR/PubSub",
+  "name": "delivery-club/external/php-pubsub-ampqp",
   "type": "application",
   "description": "A AMQP adapter for the php-pubsub package",
   "keywords": [
