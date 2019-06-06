@@ -1,6 +1,6 @@
 {
   "name": "delivery-club/external/php-pubsub-ampqp",
-  "type": "application",
+  "type": "library",
   "description": "A AMQP adapter for the php-pubsub package",
   "keywords": [
     "framework"
@@ -14,12 +14,6 @@
     {
       "name": "Pavel Mozhchil",
       "email": "lifeair@gmail.com"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://packagist.org"
     }
   ],
   "autoload": {
